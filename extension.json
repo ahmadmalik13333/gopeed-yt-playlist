@@ -1,0 +1,25 @@
+{
+  "name": "gopeed-yt-playlist-audio",
+  "version": "1.0.0",
+  "description": "Download YouTube playlists as audio files via Invidious API",
+  "homepage": "https://github.com/ahmadmalik",
+  "icon": "",
+  "license": "MIT",
+  "repository": {
+    "url": ""
+  },
+  "scripts": [
+    {
+      "event": "onResolve",
+      "match": {
+        "urls": [
+          "*://www.youtube.com/playlist*",
+          "*://youtube.com/playlist*",
+          "*://www.youtube.com/watch*list=*",
+          "*://m.youtube.com/playlist*"
+        ]
+      },
+      "entry": "index.js"
+    }
+  ]
+}
